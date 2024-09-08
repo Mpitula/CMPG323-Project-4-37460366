@@ -126,7 +126,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Identity/Account/Login" CVScreenId="f24b18c6-b879-475a-a541-43ff929e0595" CvElementArea="145, 545, 525, 78" CvType="InputBox" DesignTimeRectangle="148, 548, 520, 73" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' type='email' class='form-control' placeholder='name@example.com' aaname='Email' /&gt;" Guid="070f7377-d666-404a-bdb9-cd4d179e44d7" InformativeScreenshot="9ba522d251fcc54c24bb6418608f839c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="f24b18c6-b879-475a-a541-43ff929e0595" CvElementArea="145, 545, 525, 78" CvType="InputBox" DesignTimeRectangle="148, 548, 80, 73" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label' aaname='Email' check:innerText='Email' /&gt;" Guid="c40440f2-39f9-4c87-9a6a-63260fe73fbc" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -147,7 +147,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Identity/Account/Login" CVScreenId="f24b18c6-b879-475a-a541-43ff929e0595" CvElementArea="145, 638, 526, 78" CvType="InputBox" DesignTimeRectangle="148, 641, 520, 72" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' type='password' class='form-control' placeholder='password' aaname='Password' /&gt;" Guid="9856f509-6992-4a9a-81eb-bc2bef843b20" InformativeScreenshot="4142b6ec9b2316721c4c1e8f495e292e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="f24b18c6-b879-475a-a541-43ff929e0595" CvElementArea="145, 638, 526, 78" CvType="InputBox" DesignTimeRectangle="148, 641, 115, 72" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='form-label' check:innerText='Password' /&gt;" Guid="1701d55b-3b37-44fb-84ff-345c23587cbc" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -168,7 +168,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Identity/Account/Login" CVScreenId="f24b18c6-b879-475a-a541-43ff929e0595" CvElementArea="145, 735, 25, 25" CvType="CheckBox" DesignTimeRectangle="148, 738, 20, 20" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl id='Input_RememberMe' tag='INPUT' type='checkbox' class='form-check-input' aaname='                                                  Remember me?                     ' /&gt;" Guid="8e7b967a-8239-4c1c-9398-f506d4aefb67" InformativeScreenshot="85abb8552e9ef35160e6bfc53110d851.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="f24b18c6-b879-475a-a541-43ff929e0595" CvElementArea="145, 735, 25, 25" CvTextArea="172, 739, 139, 18" CvTextArgument="Remember me?" CvType="CheckBox" DesignTimeRectangle="148, 733, 164, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                                  Remember me?                     ' tag='LABEL' type='' class='form-label' check:innerText='Remember me?' /&gt;" Guid="eaf0a9aa-0bf1-412a-8baf-88724904b810" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
