@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Home",
+  "Type": "App",
+  "Id": "PTNaamB8BECs85gfA5D4aA",
+  "Reference": "biBYctLxuEiyfnpi5qTeig/PTNaamB8BECs85gfA5D4aA",
+  "Created": "2024-09-07T14:19:17.2601412Z",
+  "Updated": "2024-09-07T14:19:17.2601412Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

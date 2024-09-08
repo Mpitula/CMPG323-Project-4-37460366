@@ -1,0 +1,308 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Clients" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="843.2,2692.8" sap2010:WorkflowViewState.IdRef="Clients_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Clients" sap:VirtualizedContainerService.HintSize="608,2628" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ClientsData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[ClientsData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="545.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Clients" WorkbookPath="C:\Users\aussc\OneDrive\Documents\GitHub\CMPG323-Project-4-37460366\NWU Tech Trends Data.xlsx" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Home" sap:VirtualizedContainerService.HintSize="545.6,2419.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2f554db5-68a8-47e2-91e5-d708775d8b0b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,2179.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clients'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f554db5-68a8-47e2-91e5-d708775d8b0b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/" CVScreenId="55ce4e3e-57e9-4594-bd32-7ade5a1898d0" CvTextArea="86, 340, 58, 17" CvTextArgument="Clients" CvType="Text" DesignTimeRectangle="29, 320, 273, 60" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='nav-link' tag='A' type='' aaname=' Clients                 ' check:innerText='Clients' /&gt;" Guid="fba97789-3120-44aa-adaf-23de32208584" InformativeScreenshot="f689024f4301436707c62111cd02280b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="55ce4e3e-57e9-4594-bd32-7ade5a1898d0" CvTextArea="87, 270, 50, 17" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="29, 250, 273, 60" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Home             ' tag='A' type='' class='nav-link active' check:innerText='Home' /&gt;" Guid="7ff8c4ae-2313-4a76-8bcb-8afa68386880" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f554db5-68a8-47e2-91e5-d708775d8b0b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/clients" CVScreenId="a143ba7c-6d23-45ee-8b3f-fbdae85a6dc6" ContentHash="XK7nDS5NyU6CN77j5-_DHQ" CvElementArea="1750, 310, 136, 58" CvType="Button" DesignTimeRectangle="1751, 312, 133, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aaname=' Create         ' tag='BUTTON' type='' class='btn beveled-button-primary' check:innerText='Create' /&gt;" Guid="b617523d-604a-4590-9c06-0bb55a9f4c47" InformativeScreenshot="cbd0733d2c2b41c3365ce0490b3da5c2.png" Reference="biBYctLxuEiyfnpi5qTeig/ja8vg0EZ6UmUv3DpxGq1gg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='techtrendstelemetryportal.azurewebsites.net/clients' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="377, 312, 1507, 54" FuzzyAccuracy="0.61" FuzzySelectorArgument="&lt;webctrl aaname='         ' tag='DIV' type='' class='d-flex justify-content-between align-items-center mb-3' check:innerText='Clients&amp;#xA; Create' /&gt;" Guid="88204126-aa93-4887-b6cc-75a3050250bf" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ClientsData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="449.6,1637.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,1447.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Client Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="2f554db5-68a8-47e2-91e5-d708775d8b0b" Text="[CurrentRow(&quot;ClientName&quot;).ToString]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="23b91967-5303-4e7e-ad81-1a05eebd5da5" CvElementArea="359, 329, 1542, 56" CvType="InputBox" DesignTimeRectangle="362, 334, 1537, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='clientName' tag='INPUT' type='' class='form-control valid' aaname='Client Name' /&gt;" Guid="9249876b-7e52-4222-936b-10562bfa7e8f" InformativeScreenshot="33d3c87ceacc15da72b362d7a8722248.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="23b91967-5303-4e7e-ad81-1a05eebd5da5" CvTextArea="360, 307, 110, 20" CvTextArgument="Client Name" CvType="Text" DesignTimeRectangle="362, 304, 110, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Client Name' check:innerText='Client Name' /&gt;" Guid="68277eb4-d00b-4ee8-86b4-08549eae73d3" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Primary Contact Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="2f554db5-68a8-47e2-91e5-d708775d8b0b" Text="[CurrentRow(&quot;PrimaryContactEmail&quot;).ToString]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="8061d23d-3108-4751-aa4c-7e87f6512060" CvElementArea="358, 409, 1543, 49" CvType="InputBox" DesignTimeRectangle="362, 411, 1537, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='primaryContactEmail' tag='INPUT' type='' class='form-control valid' aaname='Primary Contact Email' /&gt;" Guid="9f965c3e-71e2-4c79-becc-bc57715c0529" InformativeScreenshot="b83bb36d6770e43b1d3569be75d4153d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="8061d23d-3108-4751-aa4c-7e87f6512060" CvTextArea="361, 385, 196, 23" CvTextArgument="Primary Contact Email" CvType="Text" DesignTimeRectangle="362, 381, 198, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Primary Contact Email' tag='LABEL' type='' class='' check:innerText='Primary Contact Email' /&gt;" Guid="65e23d41-b9e4-4419-b5d5-8f48f918ed26" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type Into 'Date Onboarded''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="2f554db5-68a8-47e2-91e5-d708775d8b0b" Text="[CDate(CurrentRow(&quot;DateOnOnboarded&quot;).ToString).ToString(&quot;yyyyyy//MM//dd&quot;)]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="8061d23d-3108-4751-aa4c-7e87f6512060" ContentHash="5s1Agx0Tp0a4EXJvwmWQYg" CvTextArea="375, 501, 108, 23" CvTextArgument="yyyy/mm/dd" CvType="Text" DesignTimeRectangle="362, 488, 1537, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='dateOnboarded' tag='INPUT' type='date' class='form-control valid' aaname='Date Onboarded' /&gt;" Guid="114c3220-cff6-45ca-b632-c4b0d92f5cb4" InformativeScreenshot="cca46c0a96455529bc58db9038b87fd7.png" IsResponsive="True" Reference="biBYctLxuEiyfnpi5qTeig/2eKWHKBiJUuzoYn4-zRgFg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="8061d23d-3108-4751-aa4c-7e87f6512060" CvTextArea="360, 462, 148, 18" CvTextArgument="Date Onboarded" CvType="Text" DesignTimeRectangle="362, 458, 147, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Date Onboarded' tag='LABEL' type='' class='' check:innerText='Date Onboarded' /&gt;" Guid="0a217c10-0517-497f-994c-5babc9be6b3c" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f554db5-68a8-47e2-91e5-d708775d8b0b" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="8061d23d-3108-4751-aa4c-7e87f6512060" CvElementArea="359, 532, 96, 50" CvTextArea="375, 547, 63, 20" CvTextArgument="Create" CvType="Button" DesignTimeRectangle="362, 535, 92, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Create' tag='BUTTON' type='submit' class='btn btn-primary' check:innerText='Create' /&gt;" Guid="f78e36fa-9ae7-4631-8b5d-163135a18b09" InformativeScreenshot="b9bde74a54b16a146b91e94c17a69154.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="8061d23d-3108-4751-aa4c-7e87f6512060" CvElementArea="457, 533, 137, 51" CvTextArea="474, 547, 106, 20" CvTextArgument="Back to List" CvType="Button" DesignTimeRectangle="459, 535, 135, 47" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='btn btn-secondary' check:innerText='Back to List' /&gt;" Guid="0948d294-ebba-48d8-85ed-5b58a1119405" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="353.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2f554db5-68a8-47e2-91e5-d708775d8b0b" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/clients" CVScreenId="a143ba7c-6d23-45ee-8b3f-fbdae85a6dc6" ContentHash="XK7nDS5NyU6CN77j5-_DHQ" CvElementArea="1750, 310, 136, 58" CvType="Button" DesignTimeRectangle="1751, 312, 133, 54" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl aaname=' Create         ' tag='BUTTON' type='' class='btn beveled-button-primary' check:innerText='Create' /&gt;" Guid="b617523d-604a-4590-9c06-0bb55a9f4c47" InformativeScreenshot="cbd0733d2c2b41c3365ce0490b3da5c2.png" Reference="biBYctLxuEiyfnpi5qTeig/ja8vg0EZ6UmUv3DpxGq1gg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='techtrendstelemetryportal.azurewebsites.net/clients' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="377, 312, 1507, 54" FuzzyAccuracy="0.61" FuzzySelectorArgument="&lt;webctrl aaname='         ' tag='DIV' type='' class='d-flex justify-content-between align-items-center mb-3' check:innerText='Clients&amp;#xA; Create' /&gt;" Guid="88204126-aa93-4887-b6cc-75a3050250bf" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" ContentHash="lexHqXQQ-kK_TSjmp7GGvw" IconBase64="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" InformativeScreenshot="08c868d9858cf6e1b19b59761e480df0.jpg" Reference="biBYctLxuEiyfnpi5qTeig/xA432ACGtkaMnUcY9cTbRg" Selector="&lt;html app='chrome.exe' title='Home' /&gt;" Title="Home" Url="https://techtrendstelemetryportal.azurewebsites.net/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
