@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Home Page - TelemetryPortal_MVC",
+  "Type": "Screen",
+  "Id": "_XJEOUH4tEW7GCRaG5VU2A",
+  "Reference": "cJs8qUdlvEa9Q3eR0yKghg/_XJEOUH4tEW7GCRaG5VU2A",
+  "ParentRef": "cJs8qUdlvEa9Q3eR0yKghg/nS8-gWrzKUeWyiJ0PVnwiQ",
+  "Created": "2024-09-08T14:53:27.9015473Z",
+  "Updated": "2024-09-08T14:53:27.9015473Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

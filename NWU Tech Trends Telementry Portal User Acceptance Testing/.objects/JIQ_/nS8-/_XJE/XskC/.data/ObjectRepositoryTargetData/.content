@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="L2QZNfspSEGr168HHWndHA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Clients" CVScreenId="2b179b0f-86e2-47ff-a5da-3d18b47be251" CvTextArea="146, 417, 106, 17" CvTextArgument="Create New" CvType="Text" DesignTimeRectangle="148, 412, 103, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Create New' tag='A' type='' class='' check:innerText='Create New' /&gt;" Guid="0c9710fe-ba78-4eaf-ad88-f9f74d6949a0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Clients - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3e32e80ed949b7194294785b426ac781.png" xmlns="">0XnHh3fbqVkunsnpd5_vtcw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

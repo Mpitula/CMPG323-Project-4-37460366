@@ -27,10 +27,11 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Clients.xaml",
+      "Path": "CreateNewClients.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "ClientsData&Sequence_1"
+        "ClientsEditData&Sequence_1",
+        "IsRecord&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

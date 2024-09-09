@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Home Page - TelemetryPortal_MVC",
+  "Type": "App",
+  "Id": "JIQ_X9PQ8UWdVTm_VsAXrQ",
+  "Reference": "cJs8qUdlvEa9Q3eR0yKghg/JIQ_X9PQ8UWdVTm_VsAXrQ",
+  "Created": "2024-09-08T14:53:27.5598689Z",
+  "Updated": "2024-09-08T14:53:27.5598689Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

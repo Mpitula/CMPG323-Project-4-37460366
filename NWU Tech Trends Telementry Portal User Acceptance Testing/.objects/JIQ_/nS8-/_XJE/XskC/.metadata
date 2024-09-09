@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Create New'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "XskC0LWDtk-VCS35LBmf7g",
+  "Reference": "cJs8qUdlvEa9Q3eR0yKghg/XskC0LWDtk-VCS35LBmf7g",
+  "ParentRef": "cJs8qUdlvEa9Q3eR0yKghg/_XJEOUH4tEW7GCRaG5VU2A",
+  "Created": "2024-09-08T23:15:55.4696812Z",
+  "Updated": "2024-09-08T23:15:55.4696812Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
