@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="SVGxKezq2kKwi5y1I11PBQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="79FMhvQOzkyoGfX6LilMpA" Reference="cJs8qUdlvEa9Q3eR0yKghg/a25tTI7r1ECVu59cD3ppBQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Clients" DesignTimeRectangle="148, 446, 1620, 7600" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="8e19aba2-539c-444f-853b-ea4c2fce3528" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Clients - TelemetryPortal_MVC' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="eb035b3d524d0662a47a36c28fbb36cc.png" xmlns="">0GoMVmAcKdk2G6o3ZBXsRGA</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Clients" ContentHash="YsRDwpovdUyGcOSPjljmww" DesignTimeRectangle="148, 446, 1620, 12495" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="76a17577-80f5-477d-9b71-94e58c4d3b6a" Reference="cJs8qUdlvEa9Q3eR0yKghg/a25tTI7r1ECVu59cD3ppBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Clients - TelemetryPortal_MVC' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="eb035b3d524d0662a47a36c28fbb36cc.png" xmlns="">0z-mZO21ZuEasSD_VOByTDg</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">ExtractData</x:String>
     <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Edit'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='EditUrl'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
 		&lt;ValidationErrorMessage /&gt;
 		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
