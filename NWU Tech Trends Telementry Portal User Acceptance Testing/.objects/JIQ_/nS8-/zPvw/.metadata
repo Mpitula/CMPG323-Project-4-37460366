@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Projects - TelemetryPortal_MVC",
+  "Type": "Screen",
+  "Id": "zPvwqhLscE2IlyxkY7AIPA",
+  "Reference": "cJs8qUdlvEa9Q3eR0yKghg/zPvwqhLscE2IlyxkY7AIPA",
+  "ParentRef": "cJs8qUdlvEa9Q3eR0yKghg/nS8-gWrzKUeWyiJ0PVnwiQ",
+  "Created": "2024-09-09T10:09:07.2544807Z",
+  "Updated": "2024-09-09T10:09:07.2544807Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

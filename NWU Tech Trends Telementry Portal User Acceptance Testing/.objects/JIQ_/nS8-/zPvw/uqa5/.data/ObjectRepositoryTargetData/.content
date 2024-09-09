@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wqyvIp-FTEaU4Dmm0p1kNw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects" CVScreenId="9103a984-e430-4903-9c54-d5c381cd2f3f" CvTextArea="1582, 492, 35, 18" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="1583, 488, 34, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Edit' check:innerText='Edit' /&gt;" Guid="1ca04b19-c1d7-4ecb-b52b-473c7626ea48" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Projects - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cd4b38e04c531bd97c8c33dc4aa6dff7.png" xmlns="">0WV_WIZTuEUe3CZ1rpkx2CQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
