@@ -8,7 +8,7 @@ This UiPath project automates the Create, Read, Update, and Delete (CRUD) operat
 
 **The project is designed to:**
 
-+ Retrieve client data from an Excel sheet.
++ Retrieve client and projects data from an Excel sheet.
 + Perform CRUD operations on a web application.
 + Create: Add new clients and projects based on the Excel data.
 + Read: Verifies that clients and projects were successfully created.
