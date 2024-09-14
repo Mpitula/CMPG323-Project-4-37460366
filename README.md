@@ -40,3 +40,19 @@ This UiPath project automates the Create, Read, Update, and Delete (CRUD) operat
 ## Documentation
 
 [Reference List](https://github.com/Mpitula/CMPG323-Project-4-37460366/blob/0e0853a990df0d18e81eb4d7c68e9f63e8349f49/Project%204%20References.docx)
+
+**References:**
+1.	UiPath. (2023) Excel Automation in UiPath. Available at: https://docs.uipath.com/activities/other/latest?fallbackReason=invalidPublicationType&isFallback=true&fallbackCount=1 (Accessed: 1 September 2024).
+2.	UiPath. (2023) Read Range Activity in Excel. Available at: https://docs.uipath.com/activities/docs/read-range  (Accessed: 1 September 2024).
+3.	UiPath. (2023) For Each Row Activity in UiPath. Available at: https://docs.uipath.com/activities/docs/for-each-row-in-datatable  (Accessed: 1 September 2024).
+4.	UiPath. (2023) Write Range Activity in Excel. Available at: https://docs.uipath.com/activities/docs/write-range (Accessed: 1 September 2024).
+5.	UiPath. (2023) Type into Activity. Available at: https://docs.uipath.com/activities/docs/type-into (Accessed: 1 September 2024).
+6.	UiPath. (2023) Element Exists Activity. Available at: https://docs.uipath.com/activities/docs/element-exists (Accessed: 1 September 2024).
+7.	UiPath. (2023) How to Automate Web Forms in UiPath. Available at: https://www.uipath.com/learning/video-tutorials/web-automation (Accessed: 1 September 2024).
+8.	UiPath. (2023) Data Scraping Wizard in UiPath. Available at: https://docs.uipath.com/studio/docs/about-data-scraping (Accessed: 1 September 2024).
+9.	UiPath. (2023) Try-Catch Activity in UiPath. Available at: https://docs.uipath.com/activities/docs/try-catch (Accessed: 1 September 2024).
+10.	UiPath. (2023) Automating CRUD Operations in UiPath. Available at: https://docs.uipath.com/studio/docs/automating-crud-operations (Accessed: 1 September 2024).
+
+## Contact Information
+
+For any issues or queries regarding the project, please contact: Alonemapitlula@gmail.com
