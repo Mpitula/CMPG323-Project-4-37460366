@@ -36,3 +36,7 @@ This UiPath project automates the Create, Read, Update, and Delete (CRUD) operat
 3. Open UiPath Studio and load the NWU Tech Trends Telemetry Portal – User Acceptance Testing process.
 4. Prepare the Excel test data file with input and desired output data.
 5. Run the UiPath process to automate the UAT tasks.
+
+## Documentation
+
+[Reference List](https://github.com/Mpitula/CMPG323-Project-4-37460366/blob/0e0853a990df0d18e81eb4d7c68e9f63e8349f49/Project%204%20References.docx)
