@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CreateNewProject" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="869.6,3583.2" sap2010:WorkflowViewState.IdRef="CreateNewProject_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CreateNewProject" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="864.8,1935.2" sap2010:WorkflowViewState.IdRef="CreateNewProject_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -47,6 +47,8 @@
       <x:String>System.Security</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -109,9 +111,10 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CreateNewProject" sap:VirtualizedContainerService.HintSize="880,3518.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CreateNewProject" sap:VirtualizedContainerService.HintSize="710.4,1870.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="ProjectsData" />
     </Sequence.Variables>
@@ -120,20 +123,27 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[ProjectsData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="817.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Projects" WorkbookPath="C:\Users\aussc\OneDrive\Documents\GitHub\CMPG323-Project-4-37460366\NWU Tech Trends Data.xlsx" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Home Page - TelemetryPortal_MVC" sap:VirtualizedContainerService.HintSize="545.6,2514.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V2">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[ProjectsData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="648,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Projects" WorkbookPath="C:\Users\aussc\OneDrive\Documents\GitHub\CMPG323-Project-4-37460366\NWU Tech Trends Data.xlsx" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Home Page - TelemetryPortal_MVC" sap:VirtualizedContainerService.HintSize="648,1661.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,2297.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="614.4,1421.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="index">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:Int32" Value="1" />
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Projects'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Projects'" sap:VirtualizedContainerService.HintSize="552,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/" CVScreenId="f02dec05-1ed6-4f51-9334-0ac0f8186fc5" CvTextArea="670, 264, 71, 23" CvTextArgument="Projects" CvType="Text" DesignTimeRectangle="662, 248, 89, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Projects' tag='A' type='' class='nav-link text-dark' check:innerText='Projects' /&gt;" Guid="314d765c-de23-4275-9517-95578168e6a2" InformativeScreenshot="0b0f0c1bfb2eaa46a9b24b6a6da49eda.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home Page - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -148,137 +158,253 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ProjectsData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="449.6,1874.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ProjectsData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="552,998.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,1676.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518.4,800.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create New'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V4">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects" CVScreenId="b48aa0c2-48e2-4169-a56b-14b108d59511" CvTextArea="146, 417, 106, 17" CvTextArgument="Create New" CvType="Text" DesignTimeRectangle="148, 412, 103, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Create New' tag='A' type='' class='' check:innerText='Create New' /&gt;" Guid="6b89c206-eb8f-4e50-8eeb-7bfdea9bf08d" InformativeScreenshot="2d946789f784445ca11c84764b12fb7c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Projects - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                      </uix:NClick.Target>
-                      <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionOptions.Retry>
-                          <uix:VerifyExecutionOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionOptions.Timeout>
-                        </uix:VerifyExecutionOptions>
-                      </uix:NClick.VerifyOptions>
-                    </uix:NClick>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Project Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Text="[CurrentRow(&quot;ProjectName&quot;).ToString]" Version="V4">
-                      <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="155, 515, 525, 51" CvType="InputBox" DesignTimeRectangle="159, 518, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ProjectName' tag='INPUT' type='text' class='form-control' aaname='Project Name' /&gt;" Guid="1bb572d7-e997-4b47-89d9-0af295f87402" InformativeScreenshot="3770fa850541dfa758f5ea162d6c5e36.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvTextArea="157, 494, 121, 22" CvTextArgument="Project Name" CvType="Text" DesignTimeRectangle="159, 488, 119, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='control-label' aaname='Project Name' check:innerText='Project Name' /&gt;" Guid="292a0428-7dd9-48d1-a5ac-40735762d6ab" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NTypeInto.Target>
-                      <uix:NTypeInto.VerifyOptions>
-                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionTypeIntoOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionTypeIntoOptions.Retry>
-                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        </uix:VerifyExecutionTypeIntoOptions>
-                      </uix:NTypeInto.VerifyOptions>
-                    </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Project Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Text="[CurrentRow(&quot;ProjectDescription&quot;).ToString]" Version="V4">
-                      <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="155, 592, 525, 52" CvType="InputBox" DesignTimeRectangle="159, 595, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ProjectDescription' tag='INPUT' type='text' class='form-control' aaname='Project Description' /&gt;" Guid="7fda37fd-f723-4e95-8102-445bb55582f9" InformativeScreenshot="159e97e65ae5a960e2f68b1417e616cb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvTextArea="157, 570, 169, 23" CvTextArgument="Project Description" CvType="Text" DesignTimeRectangle="159, 565, 167, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Project Description' tag='LABEL' type='' class='control-label' check:innerText='Project Description' /&gt;" Guid="ebcf9161-d5ab-4509-bfb4-0f7519673a61" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NTypeInto.Target>
-                      <uix:NTypeInto.VerifyOptions>
-                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionTypeIntoOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionTypeIntoOptions.Retry>
-                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        </uix:VerifyExecutionTypeIntoOptions>
-                      </uix:NTypeInto.VerifyOptions>
-                    </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Project Status'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Text="[CurrentRow(&quot;ProjectStatus&quot;).ToString]" Version="V4">
-                      <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="155, 669, 526, 51" CvType="InputBox" DesignTimeRectangle="159, 672, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ProjectStatus' tag='INPUT' type='text' class='form-control' aaname='Project Status' /&gt;" Guid="beeba36b-1909-4c4c-a7d4-a9988dfb22c5" InformativeScreenshot="05a86ca9d0e6241ec031f8a829496fb5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvTextArea="159, 647, 121, 23" CvTextArgument="Project Status" CvType="Text" DesignTimeRectangle="159, 642, 120, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Project Status' tag='LABEL' type='' class='control-label' check:innerText='Project Status' /&gt;" Guid="a313805b-f47b-4d6a-995a-4183e78a760f" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NTypeInto.Target>
-                      <uix:NTypeInto.VerifyOptions>
-                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionTypeIntoOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionTypeIntoOptions.Retry>
-                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        </uix:VerifyExecutionTypeIntoOptions>
-                      </uix:NTypeInto.VerifyOptions>
-                    </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Client ID'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Text="[CurrentRow(&quot;ClientID&quot;).ToString]" Version="V4">
-                      <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="156, 747, 524, 51" CvType="InputBox" DesignTimeRectangle="159, 749, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ClientId' tag='INPUT' type='text' class='form-control' aaname='Client ID' /&gt;" Guid="81f37245-3d8e-4979-a183-55792ee267a8" InformativeScreenshot="e1622c89cbef08f1fbf2f74e7901618f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvTextArea="157, 724, 78, 18" CvTextArgument="Client ID" CvType="Text" DesignTimeRectangle="159, 719, 75, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Client ID' tag='LABEL' type='' class='control-label' check:innerText='Client ID' /&gt;" Guid="3a82780e-5eb6-411b-9453-52e1bb511b44" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NTypeInto.Target>
-                      <uix:NTypeInto.VerifyOptions>
-                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionTypeIntoOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionTypeIntoOptions.Retry>
-                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        </uix:VerifyExecutionTypeIntoOptions>
-                      </uix:NTypeInto.VerifyOptions>
-                    </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="353.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V4">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="157, 794, 92, 51" CvTextArea="174, 811, 58, 17" CvTextArgument="Create" CvType="Button" DesignTimeRectangle="159, 796, 89, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Create' check:text='Create' /&gt;" Guid="e1ad4536-bb7d-4f2e-90ce-3292e4cf9de5" InformativeScreenshot="478e2fc9ce59c752c4ccf83f3c2e9b4e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                      </uix:NClick.Target>
-                      <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionOptions.Retry>
-                          <uix:VerifyExecutionOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionOptions.Timeout>
-                        </uix:VerifyExecutionOptions>
-                      </uix:NClick.VerifyOptions>
-                    </uix:NClick>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,712" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <TryCatch.Try>
+                        <Sequence sap:VirtualizedContainerService.HintSize="608,2997.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="sd:DataTable" Name="ExtractClientDataTable" />
+                            <Variable x:TypeArguments="x:String" Name="string1" />
+                            <Variable x:TypeArguments="sd:DataTable" Name="ExtractProjectDataTable" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create New'" sap:VirtualizedContainerService.HintSize="545.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects" CVScreenId="b48aa0c2-48e2-4169-a56b-14b108d59511" CvTextArea="146, 417, 106, 17" CvTextArgument="Create New" CvType="Text" DesignTimeRectangle="148, 412, 103, 27" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Create New' tag='A' type='' class='' check:innerText='Create New' /&gt;" Guid="6b89c206-eb8f-4e50-8eeb-7bfdea9bf08d" InformativeScreenshot="2d946789f784445ca11c84764b12fb7c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Projects - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Project Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="545.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Text="[CurrentRow(&quot;ProjectName&quot;).ToString]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="155, 515, 525, 51" CvType="InputBox" DesignTimeRectangle="159, 518, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ProjectName' tag='INPUT' type='text' class='form-control' aaname='Project Name' /&gt;" Guid="1bb572d7-e997-4b47-89d9-0af295f87402" InformativeScreenshot="3770fa850541dfa758f5ea162d6c5e36.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvTextArea="157, 494, 121, 22" CvTextArgument="Project Name" CvType="Text" DesignTimeRectangle="159, 488, 119, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='control-label' aaname='Project Name' check:innerText='Project Name' /&gt;" Guid="292a0428-7dd9-48d1-a5ac-40735762d6ab" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Project Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="545.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Text="[CurrentRow(&quot;ProjectDescription&quot;).ToString]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="155, 592, 525, 52" CvType="InputBox" DesignTimeRectangle="159, 595, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ProjectDescription' tag='INPUT' type='text' class='form-control' aaname='Project Description' /&gt;" Guid="7fda37fd-f723-4e95-8102-445bb55582f9" InformativeScreenshot="159e97e65ae5a960e2f68b1417e616cb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvTextArea="157, 570, 169, 23" CvTextArgument="Project Description" CvType="Text" DesignTimeRectangle="159, 565, 167, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Project Description' tag='LABEL' type='' class='control-label' check:innerText='Project Description' /&gt;" Guid="ebcf9161-d5ab-4509-bfb4-0f7519673a61" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Project Status'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="545.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Text="[CurrentRow(&quot;ProjectStatus&quot;).ToString]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="155, 669, 526, 51" CvType="InputBox" DesignTimeRectangle="159, 672, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ProjectStatus' tag='INPUT' type='text' class='form-control' aaname='Project Status' /&gt;" Guid="beeba36b-1909-4c4c-a7d4-a9988dfb22c5" InformativeScreenshot="05a86ca9d0e6241ec031f8a829496fb5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvTextArea="159, 647, 121, 23" CvTextArgument="Project Status" CvType="Text" DesignTimeRectangle="159, 642, 120, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Project Status' tag='LABEL' type='' class='control-label' check:innerText='Project Status' /&gt;" Guid="a313805b-f47b-4d6a-995a-4183e78a760f" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Client ID'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="545.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Text="[CurrentRow(&quot;ClientID&quot;).ToString]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="156, 747, 524, 51" CvType="InputBox" DesignTimeRectangle="159, 749, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ClientId' tag='INPUT' type='text' class='form-control' aaname='Client ID' /&gt;" Guid="81f37245-3d8e-4979-a183-55792ee267a8" InformativeScreenshot="e1622c89cbef08f1fbf2f74e7901618f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvTextArea="157, 724, 78, 18" CvTextArgument="Client ID" CvType="Text" DesignTimeRectangle="159, 719, 75, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Client ID' tag='LABEL' type='' class='control-label' check:innerText='Client ID' /&gt;" Guid="3a82780e-5eb6-411b-9453-52e1bb511b44" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="545.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="157, 794, 92, 51" CvTextArea="174, 811, 58, 17" CvTextArgument="Create" CvType="Button" DesignTimeRectangle="159, 796, 89, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Create' check:text='Create' /&gt;" Guid="e1ad4536-bb7d-4f2e-90ce-3292e4cf9de5" InformativeScreenshot="478e2fc9ce59c752c4ccf83f3c2e9b4e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                          <Assign sap:VirtualizedContainerService.HintSize="545.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[string1]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[CurrentRow("ProjectName").ToString()]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractProjectDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Project Name' ReferenceIdx='0' Name='Project Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Project Description' ReferenceIdx='1' Name='Project Description'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Project Creation Date' ReferenceIdx='2' Name='Project Creation Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Project Status' ReferenceIdx='3' Name='Project Status'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Client ID' ReferenceIdx='4' Name='Client ID'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-5' ReferenceIdx='5' Name='Column-5' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-5 Url' ReferenceIdx='6' Name='Column-5 Url' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Project Name' attr='fulltext' /&gt;&lt;column name='Project Description' attr='fulltext' /&gt;&lt;column name='Project Creation Date' attr='fulltext' /&gt;&lt;column name='Project Status' attr='fulltext' /&gt;&lt;column name='Client ID' attr='fulltext' /&gt;&lt;column name='Column-5' attr='fulltext' name2='Column-5 Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="545.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V4">
+                            <uix:NExtractData.Target>
+                              <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects" DesignTimeRectangle="159, 396, 1620, 153" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="a35d80f4-f599-48d9-8fac-d1de15cda634" InformativeScreenshot="ab0026ec4a8cae8cbad9a7abbe8eb22d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Projects - TelemetryPortal_MVC' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NExtractData.Target>
+                          </uix:NExtractData>
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractProjectDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="545.6,1008.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                            <ui:ForEachRow.Body>
+                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,820" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="string2" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[string2]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow("Project Name").ToString()]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <If Condition="[string1 = string2]" sap:VirtualizedContainerService.HintSize="449.6,617.6" sap2010:WorkflowViewState.IdRef="If_1">
+                                    <If.Then>
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:WriteCell Cell="[&quot;G&quot; &amp; (index + 1).ToString()]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Clients" Text="TRUE" WorkbookPath="C:\Users\aussc\OneDrive\Documents\GitHub\CMPG323-Project-4-37460366\NWU Tech Trends Data.xlsx" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:WriteCell Cell="[&quot;G&quot; &amp; (index + 1).ToString()]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="Clients" Text="FALSE" WorkbookPath="C:\Users\aussc\OneDrive\Documents\GitHub\CMPG323-Project-4-37460366\NWU Tech Trends Data.xlsx" />
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachRow.Body>
+                          </ui:ForEachRow>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422.4,524.8" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Sequence sap:VirtualizedContainerService.HintSize="416,453.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3309a332-a590-46ac-9f28-f9ca4d79c5a6" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects/Create" CVScreenId="6374f840-4bdf-4fc1-a0eb-93566bd859f3" CvElementArea="157, 794, 92, 51" CvTextArea="174, 811, 58, 17" CvTextArgument="Create" CvType="Button" DesignTimeRectangle="159, 796, 89, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Create' check:text='Create' /&gt;" Guid="e1ad4536-bb7d-4f2e-90ce-3292e4cf9de5" InformativeScreenshot="478e2fc9ce59c752c4ccf83f3c2e9b4e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - TelemetryPortal_MVC' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <ui:WriteCell Cell="[&quot;G&quot; &amp; (index + 1).ToString()]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="WriteCell_4" SheetName="Clients" Text="FALSE" WorkbookPath="C:\Users\aussc\OneDrive\Documents\GitHub\CMPG323-Project-4-37460366\NWU Tech Trends Data.xlsx" />
+                            </Sequence>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>
             </ui:ForEachRow>
-            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="449.6,107.2" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects" Version="V4" />
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="552,107.2" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Projects" Version="V4" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

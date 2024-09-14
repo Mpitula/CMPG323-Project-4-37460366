@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="79FMhvQOzkyoGfX6LilMpA" Reference="cJs8qUdlvEa9Q3eR0yKghg/a25tTI7r1ECVu59cD3ppBQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="fMUz9bO-Z0-1CaIS-hmy5w" Reference="cJs8qUdlvEa9Q3eR0yKghg/a25tTI7r1ECVu59cD3ppBQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Clients" ContentHash="YsRDwpovdUyGcOSPjljmww" DesignTimeRectangle="148, 446, 1620, 12495" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="76a17577-80f5-477d-9b71-94e58c4d3b6a" Reference="cJs8qUdlvEa9Q3eR0yKghg/a25tTI7r1ECVu59cD3ppBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Clients - TelemetryPortal_MVC' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="eb035b3d524d0662a47a36c28fbb36cc.png" xmlns="">0z-mZO21ZuEasSD_VOByTDg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://nwutechtrendstelemetryportalmvc.azurewebsites.net/Clients" ContentHash="nEaM6Tw9p0aeYHfUtBdylg" DesignTimeRectangle="148, 511, 1620, 765" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="1a93c219-c7d4-42ec-a874-2ee1526065a2" Reference="cJs8qUdlvEa9Q3eR0yKghg/a25tTI7r1ECVu59cD3ppBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Clients - TelemetryPortal_MVC' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="74cb41c06fe020c8d833b8184ef8b26a.png" xmlns="">0u0SvHsJ4MkKy8mnOwo8Zzg</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">ExtractData</x:String>
     <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='EditUrl'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='DeleteUrl'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='EditUrl'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
 		&lt;ValidationErrorMessage /&gt;
 		&lt;IsExtra&gt;false&lt;/IsExtra&gt;

@@ -22,6 +22,11 @@
       "Path": "CreateNewClients.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "string1&Sequence_31",
+        "index&Sequence_1",
+        "string2&Sequence_31",
+        "ExtractCompareDataTable&Sequence_31",
+        "ExtractDataTable&Sequence_31",
         "ClientsEditData&Sequence_1",
         "IsRecord&Sequence_1"
       ],
@@ -43,6 +48,8 @@
       "Path": "DeleteProjects.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "variable1&TryCatch_1",
+        "index&TryCatch_1",
         "ExtractDeleteDataTable&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
@@ -53,6 +60,8 @@
       "Path": "EditProjects.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "index&TryCatch_1",
+        "variable1&TryCatch_1",
         "Completed&Sequence_4",
         "ExtractEditDataTable&Sequence_2",
         "outputElement&Sequence_1"
@@ -65,6 +74,9 @@
       "Path": "EditClients.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "EditClientDataTable&Sequence_1",
+        "index&Sequence_2",
+        "variable1&Sequence_3",
         "ExtractEditClientsDataTable&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
@@ -75,7 +87,9 @@
       "Path": "DeleteClients.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "ExtractDeleteClientDataTable&Sequence_2"
+        "ExtractDeleteClientDataTable&Sequence_2",
+        "index&Sequence_3",
+        "ExtractDeleteClientDataTable&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -87,6 +101,14 @@
       "VariablesSectionElementsOrder": [
         "Browser1&Sequence_1"
       ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Logout.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
