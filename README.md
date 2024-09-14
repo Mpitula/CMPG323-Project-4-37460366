@@ -22,7 +22,17 @@ This UiPath project automates the Create, Read, Update, and Delete (CRUD) operat
 
 + UiPath Studio (version 2023 or later).
 + UiPath Excel Activities package installed.
-+ Access to the [web application]https://nwutechtrendstelemetryportalmvc.azurewebsites.net/ where the CRUD operations will be performed.
-+ A configured Excel file [NWU Tech Trends Data. xlsx]https://github.com/Mpitula/CMPG323-Project-4-37460366/blob/58157145444a5a8974a17da47d20c2ce9261d08a/NWU%20Tech%20Trends%20Data.xlsx with the client information.
++ Access to the [web application](https://nwutechtrendstelemetryportalmvc.azurewebsites.net/) where the CRUD operations will be performed.
++ A configured Excel file [NWU Tech Trends Data. xlsx](https://github.com/Mpitula/CMPG323-Project-4-37460366/blob/58157145444a5a8974a17da47d20c2ce9261d08a/NWU%20Tech%20Trends%20Data.xlsx) with the client information.
 + Email - Alonemapitlula@gmail.com
 + Password - Alone@12
+
+## How to Use the UiPath RPA Test Automation
+
+**Follow these steps to use the UiPath RPA automation for UAT:**
+
+1. Clone the GitHub repository to your local machine.
+2. Install UiPath Studio Community Edition if not already installed.
+3. Open UiPath Studio and load the NWU Tech Trends Telemetry Portal – User Acceptance Testing process.
+4. Prepare the Excel test data file with input and desired output data.
+5. Run the UiPath process to automate the UAT tasks.
